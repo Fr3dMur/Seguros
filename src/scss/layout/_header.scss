@@ -1,0 +1,47 @@
+@use '../base/var' as v;
+@use '../base/mixins' as m;
+
+
+.header{
+    background-color: v.$darkBlue;
+    padding: 3.2rem;
+
+    .bar{
+        @include m.tablet{
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+       };
+   }
+    
+    h1, a, p{
+        color: v.$white;
+        margin: 0;
+    }
+    
+    .nav-principal{
+        display: grid;
+        justify-items: center;
+        @include m.tablet{
+             	display: flex;
+                justify-content: space-between;
+                gap: 1rem;
+        };
+        
+        a{
+            padding: 1rem;
+            font-size: 2em;
+        }
+    }
+
+
+    
+}
+
+logo{
+    p{
+        font-size: 1.4rem;
+    }   
+}
+
+

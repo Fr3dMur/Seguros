@@ -13,9 +13,11 @@ const cache = require('gulp-cache');
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-imagemin');
 const avif = require('gulp-avif');
+const ico = require('gulp-to-ico');
 
 // JavaScript
 const terser = require('gulp-terser-js');
+const { devNull } = require("os");
 
 // FUNTIONS
 
@@ -80,6 +82,15 @@ function versionAvif(done){
     done();
 };
 
+// Transform to ico
+function versionIco(done){
+    src("src/img/favicon/*.{png,jpg}")
+        .pipe(ico( 'favicon.ico', { resize: true, sizes: [16, 24, 32, 64] } ) )
+        .pipe(dest("build/img"))
+
+    done();
+}
+
 // Function for JavaScript also compilation & minified
 function JavaScript(done){
     src("src/js/**/*.js")
@@ -106,5 +117,6 @@ exports.js = JavaScript;
 exports.imagenes = imagenes;
 exports.versionWebp = versionWebp;
 exports.versionAvif = versionAvif;
-exports.dev = parallel( imagenes, versionWebp, versionAvif, JavaScript, css, dev);
+exports.versionIco = versionIco;
+exports.dev = parallel( imagenes, versionWebp, versionAvif, versionIco, JavaScript, css, dev);
 
