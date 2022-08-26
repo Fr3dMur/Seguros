@@ -11,7 +11,7 @@
     <link rel="preload" href="build/css/app.css" as="style" onload="this.rel='stylesheet'" >
     <link rel="stylesheet" href="build/css/app.css">
 
-    <link rel="icon" type="image/x-icon" href="build/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="build/img/favicon/favicon.ico">
 
     <title>Leudis Osuna</title>
 </head>
@@ -20,8 +20,11 @@
     <header class="header">
 
         <section class="bar contenedor">
+
             <div class="logo">
-                <h1>Leudis Osuna </h1>
+                <a href="index.html">
+                    <h1>Leudis Osuna </h1>
+                </a>
                 <p>Corredor de Seguros</p>
             </div>
 
@@ -34,6 +37,18 @@
         </section>
 
     </header>
+
+    <main class="principal">
+        <section class="contenedor">
+            <div class="contenedor-img">
+                <picture>
+                    <source srcset="build/img/seguros.avif" alt="Una imagen sobre Seguros" type="image/avif">
+                    <source srcset="build/img/seguros.webp" alt="Una imagen sobre Seguros" type="image/webp">
+                    <img loading="lazy" width="200" height="300" src="build/img/seguros.jpg" alt="Una imagen sobre Seguros">
+                </picture>
+            </div>
+        </section>
+    </main>
 
 
 </body>

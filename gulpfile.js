@@ -11,7 +11,7 @@ const sourcemaps = require('gulp-sourcemaps');
 // Images
 const cache = require('gulp-cache');
 const imagemin = require('gulp-imagemin');
-const webp = require('gulp-imagemin');
+const webp = require('gulp-webp');
 const avif = require('gulp-avif');
 const ico = require('gulp-to-ico');
 
@@ -64,7 +64,7 @@ function versionWebp(done){
 
     src("src/img/**/*.{png,jpg}")
         .pipe(webp(options) )
-        .pipe(dest("build/img") );
+        .pipe(dest("build/img"));
 
     done();
 };
@@ -86,7 +86,7 @@ function versionAvif(done){
 function versionIco(done){
     src("src/img/favicon/*.{png,jpg}")
         .pipe(ico( 'favicon.ico', { resize: true, sizes: [16, 24, 32, 64] } ) )
-        .pipe(dest("build/img"))
+        .pipe(dest("build/img/favicon"))
 
     done();
 }

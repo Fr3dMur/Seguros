@@ -28,9 +28,15 @@
                 gap: 1rem;
         };
         
-        a{
+        .nav__link{
             padding: 1rem;
             font-size: 2em;
+             
+            &:hover{
+                color: v.$blueLight;
+                text-decoration: underline;
+            }
+        
         }
     }
 
