@@ -3,7 +3,7 @@
 
 # Ignora la carpetas
 node_modules
-src
+
 
 
 # Ignora todos los archivos de texto
