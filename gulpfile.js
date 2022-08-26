@@ -21,12 +21,21 @@ const terser = require('gulp-terser-js');
 
 // Run compilation of the scss files also minified
 function css(done) {
-    src("src/scss/**/*.scss")
+    src('src/scss/**/*.scss')
         .pipe(sourcemaps.init())
-        .pipe(plumber())
+        .pipe(plumber() )
         .pipe(sass())
         .pipe(postcss([autoprefixer(), cssnano()]))
         .pipe(sourcemaps.write('.'))
+        .pipe(dest("build/css"));
+
+    done();
+};
+
+function css1(done) {
+    src('src/scss/**/*.scss')
+        .pipe(plumber() )
+        .pipe(sass())
         .pipe(dest("build/css"));
 
     done();
@@ -75,7 +84,6 @@ function versionAvif(done){
 function JavaScript(done){
     src("src/js/**/*.js")
         .pipe(sourcemaps.init() )
-        .pipe(plumber() )
         .pipe( terser() )
         .pipe(sourcemaps.write())
         .pipe(dest("build/js"));
@@ -98,5 +106,5 @@ exports.js = JavaScript;
 exports.imagenes = imagenes;
 exports.versionWebp = versionWebp;
 exports.versionAvif = versionAvif;
-exports.dev = parallel( imagenes, versionWebp, versionAvif, JavaScript, css);
+exports.dev = parallel( imagenes, versionWebp, versionAvif, JavaScript, css, dev);
 
