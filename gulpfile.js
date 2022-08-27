@@ -91,6 +91,12 @@ function versionIco(done){
     done();
 }
 
+// Almacenar SVG
+function svg(done){
+    src("src/img/svg/**/*.svg")
+        .pipe(dest("build/img/svg"))
+}
+
 // Function for JavaScript also compilation & minified
 function JavaScript(done){
     src("src/js/**/*.js")
@@ -118,5 +124,6 @@ exports.imagenes = imagenes;
 exports.versionWebp = versionWebp;
 exports.versionAvif = versionAvif;
 exports.versionIco = versionIco;
-exports.dev = parallel( imagenes, versionWebp, versionAvif, versionIco, JavaScript, css, dev);
+exports.svg = svg;
+exports.dev = parallel( imagenes, versionWebp, versionAvif, versionIco, svg, JavaScript, css, dev);
 
