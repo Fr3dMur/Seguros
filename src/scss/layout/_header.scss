@@ -4,7 +4,7 @@
 
 .header{
     background-color: v.$darkBlue;
-    padding: 3.2rem;
+    padding: 3rem;
 
     .bar{
         @include m.tablet{
@@ -12,6 +12,13 @@
            justify-content: space-between;
            align-items: center;
        };
+   }
+
+   h1{
+        font-size: 3.2rem;
+        @include m.phone{
+             	font-size: 4rem
+        };
    }
     
     h1, a, p{
@@ -27,10 +34,20 @@
                 justify-content: space-between;
                 gap: 1rem;
         };
-        
+
+        margin-top: 2rem;
+        @include m.tablet{
+                margin: 0;
+        };
+            
         .nav__link{
             padding: 1rem;
-            font-size: 1.4em;
+            font-size: 1.3rem;
+            
+            @include m.laptop{
+                font-size: 1.8rem;
+                 	
+            };
              
             &:hover{
                 color: v.$green;

@@ -86,7 +86,7 @@ function versionAvif(done){
 function versionIco(done){
     src("src/img/favicon/*.{png,jpg}")
         .pipe(ico( 'favicon.ico', { resize: true, sizes: [16, 24, 32, 64] } ) )
-        .pipe(dest("build/img/favicon"))
+        .pipe(dest("build/favicon"))
 
     done();
 }
