@@ -108,6 +108,26 @@ function JavaScript(done){
     done();
 };
 
+// Function for move index to deploy
+function moveIndex(done){
+    src("index.html")
+        .pipe(dest("../deployment"))
+
+    done();
+}
+
+// Function for move file build to deploy 
+function moveBuild(done){
+    src("build/**/*")
+        .pipe(dest("../deployment/build"))
+
+    done();
+}
+
+
+
+
+
 // Function Watch to see changes and dontstop the compilation
 function dev(done) {
     watch("src/scss/**/*.scss", css)
@@ -125,5 +145,7 @@ exports.versionWebp = versionWebp;
 exports.versionAvif = versionAvif;
 exports.versionIco = versionIco;
 exports.svg = svg;
-exports.dev = parallel( imagenes, versionWebp, versionAvif, versionIco, svg, JavaScript, css, dev);
+exports.moveIndex = moveIndex;
+exports.moveBuild = moveBuild;
+exports.dev = parallel( imagenes, versionWebp, versionAvif, versionIco, svg, moveIndex, moveBuild, JavaScript, css, dev);
 
