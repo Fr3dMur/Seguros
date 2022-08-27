@@ -1,0 +1,75 @@
+@use '../base/var' as v;
+@use '../base/mixins' as m;
+
+.contact{
+    background-color: v.$darkBlue;
+    padding: 2rem;
+    color: v.$white;
+
+    h3{
+        text-align: center;
+     
+    }
+}
+
+.form__contact{
+    // display: grid;
+    // justify-content: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: v.$green;
+    fieldset{
+        padding: 2rem;
+        color: v.$black;
+        border: none;
+        
+
+
+        @include m.monitor{
+            display: grid;
+        };
+        
+        legend{
+            color: v.$black;
+        }
+        
+        
+        
+    }
+}
+
+.contenedor__inputs{
+    font-weight: 700;
+    display: grid;
+    gap: 1rem;
+    column-gap: 2rem;
+    align-items: center;
+
+    input{
+        border-radius: .3rem;
+        padding: 1rem;
+        border: none;
+    }
+
+    @include m.phone{
+        grid-template-columns: 1fr 6fr;
+    };
+
+    @include m.tablet{
+        grid-template-columns: 1fr 2fr 1fr 2fr;
+        .mail{
+            grid-column: 2 / 5;
+        }
+    };
+}
+
+.contenedor__t-area{
+    display: grid;
+    grid-template-rows: 2, 1fr;
+    margin-top: 1rem;
+    
+    gap: 1rem;
+    textarea{
+        width: 100%;
+    }
+}

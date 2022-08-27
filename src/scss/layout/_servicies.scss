@@ -7,6 +7,10 @@
     h3, h4{
         text-align: center;
     }
+    background-image: url(../../../build/img/bg.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 
 .servicios-grid{
@@ -49,6 +53,9 @@
             width: 30rem;
         }
 
+        h4{
+            margin-top: 3rem;
+        }
 
     };
 
