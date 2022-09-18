@@ -11,4 +11,6 @@ Also i want to make a database of her client and a app web to generate a .pdf fo
 - JavaScript
 - Git
 - And others tecnologies that im gonna learn with the time
+- PHP
+- MySQL
 
