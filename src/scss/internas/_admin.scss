@@ -1,0 +1,29 @@
+@use '../base/var' as v;
+@use '../base/mixins' as m;
+
+.database-asegurados{
+    margin: 3rem auto;
+}
+
+.asegurados{
+    margin-top: 3rem;
+    width: 100%;
+    border-spacing: 0;
+    border: v.$bordeNegro;
+    
+    thead{
+        border: v.$bordeNegro;
+        background-color: v.$blue;
+        th{
+            border: v.$bordeNegro;
+            padding: 1rem;
+            color: v.$white;
+        }
+    }
+    
+    td{
+        border: v.$bordeNegro;
+        text-align: center;
+    }
+
+}

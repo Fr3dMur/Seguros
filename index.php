@@ -76,7 +76,7 @@
     <section class="contact">
         <h3>Contactanos</h3>
         <div class="contenedor">
-            <form action="" class="form__contact">
+            <form action="" class="form__contact w-100 contenedor">
                 <fieldset>
                     <legend>Llena el formulario y nos pondremos en contacto contigo</legend>
 
@@ -110,7 +110,7 @@
         </div>
     </section>
    
-    <?php  
+<?php  
     incluirTemplate('footer');
 
 ?>

@@ -30,6 +30,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.8",
     "cssnano": "^5.1.13",
+    "glob": "^8.0.3",
     "gulp": "^4.0.2",
     "gulp-avif": "^1.1.1",
     "gulp-cache": "^1.1.3",

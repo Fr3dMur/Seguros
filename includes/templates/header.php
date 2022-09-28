@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
 
-    <link rel="preload" href="build/css/app.css" as="style" onload="this.rel='stylesheet'" >
-    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="preload" href="/build/css/app.css" as="style" onload="this.rel='stylesheet'" >
+    <link rel="stylesheet" href="/build/css/app.css">
 
     <link rel="icon" type="image/x-icon" href="build/favicon/favicon.ico">
 
