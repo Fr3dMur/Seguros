@@ -28,12 +28,24 @@
                 <p>Corredor de Seguros</p>
             </div>
 
-            <nav class="nav-principal">
-                <a href="#" class="nav__link">Sobre Nosotros</a>
-                <a href="#" class="nav__link">Servicios</a>
-                <a href="#" class="nav__link">Contactanos</a>
-            </nav>
+       
 
-        </section>
+                <nav class="nav-principal">
+                    <a href="#" class="nav__link">Nosotros</a>
+                    <a href="#" class="nav__link">Servicios</a>
+                    <a href="#" class="nav__link">Contactanos</a>
+                    <a href="/pages/logIn.php" class="nav__link">Iniciar Sesion</a>
+                    
+                        <div class="dark-mode-boton">
+
+                        </div>
+                    
+                </nav>
+    
+                
+                
+                
+            </section>
+            
 
     </header>

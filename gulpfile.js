@@ -147,5 +147,5 @@ exports.versionIco = versionIco;
 exports.svg = svg;
 exports.moveIndex = moveIndex;
 exports.moveBuild = moveBuild;
-exports.dev = parallel( imagenes, versionWebp, versionAvif, versionIco,  JavaScript, css, dev);
+exports.dev = parallel( imagenes, versionWebp, versionAvif, versionIco, svg, JavaScript, css, dev);
 

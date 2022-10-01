@@ -6,6 +6,8 @@
     background-color: v.$darkBlue;
     padding: 3rem;
 
+    
+
     .bar{
         @include m.tablet{
            display: flex;
@@ -13,6 +15,8 @@
            align-items: center;
        };
    }
+
+
 
    h1{
         font-size: 3.2rem;
@@ -29,11 +33,13 @@
     .nav-principal{
         display: grid;
         justify-items: center;
+        
         @include m.tablet{
-             	display: flex;
-                justify-content: space-between;
-                gap: 1rem;
-        };
+                display: inline;
+                // @include m.grid(4, 3rem);
+                // gap: .5rem;
+                
+        };  
 
         margin-top: 2rem;
         @include m.tablet{
@@ -43,9 +49,11 @@
         .nav__link{
             padding: 1rem;
             font-size: 1.3rem;
+
             
             @include m.laptop{
                 font-size: 1.8rem;
+                display: inline;
                  	
             };
              
@@ -56,9 +64,11 @@
         
         }
     }
+}
 
-
-    
+.boton-darkMode{
+    height: 3rem;
+    filter: invert(100%);
 }
 
 logo{

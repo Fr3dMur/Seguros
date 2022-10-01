@@ -1,0 +1,89 @@
+@use 'var' as v;
+@use 'mixins' as m;
+
+.dark-mode-boton{
+    transition: background-image .3s linear;
+    background-image: url(/build/img/svg/Sun_mode.svg);
+    height: 2.3rem;
+    width: 2.3rem;
+  
+    display: inline-block;
+    position: relative;
+    top: .7rem;
+    left: 1rem;
+    background-repeat: no-repeat;
+    filter: invert(100%);
+    
+    &:hover{
+        filter: invert(70%);
+    }
+}
+
+.change{
+    transition: background-image .3s linear;
+    background-image: url(/build/img/svg/dark-mode.svg);
+}
+
+body{
+    transition: background-color .3s linear;
+
+}
+
+.dark-mode{
+    
+    transition: background-color .3s linear;
+    background-color: darken(v.$black, 10);
+
+    p{
+        color: v.$white;
+    };
+
+    h1, h2, h3, h4, a{
+        color: v.$grey;
+    };
+
+    .form__contact{
+        background-color: darken(v.$green, 30)
+    }
+
+    .logIn{
+        legend, label{
+            color: v.$white;
+        }
+
+        
+    }
+
+    // .anuncio, .resumen-propiedad{
+    //     background-color: $grisOscuro;
+    //     border: 1px solid $grisOscuro;
+
+    //     .precio{
+    //         color: $verde;
+    //     }
+    //     .icono{
+    //         filter: invert(100%);
+    //     }
+    // }
+    // .nosotros__contenido blockquote{
+    //     color: $blanco;
+    // }
+
+    // .formulario{
+    //     label,
+    //     legend,
+    //     p {
+    //         color: $gris;
+    //     }
+
+    //     input:not([type="submit"]),
+    //     textarea,
+    //     select {
+    //         background-color: $grisOscuro;
+    //         color: $blanco;
+    //         border: 1px solid $grisOscuro;
+    //     }
+    // }
+    
+};
+

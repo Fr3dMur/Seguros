@@ -5,5 +5,7 @@
             <p>Diseñado por Lex Murillo y Jenifer Corniel</p>
         </div>
     </footer>
+    <script src="/build/js/app.js"></script>
+    <script src="/build/js/darkMode.js"></script>
 </body>
 </html>
