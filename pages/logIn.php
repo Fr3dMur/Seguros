@@ -8,7 +8,7 @@
 
 
     <form action="" class="contenedor-logIn w-1000 contenedor">
-        <fieldset class="logIn">
+        <fieldset class="logIn formulario">
             <legend>Iniciar Sesion</legend>
 
             <label for="user">Usuario</label>

@@ -1,4 +1,6 @@
-.w-100{
+@use 'var' as v;
+
+w-100{
     width: 80rem;
 }
 
@@ -9,4 +11,24 @@
 .derecha{
     display: flex;
     justify-content: flex-end;
+}
+
+.alerta{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    margin: .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.error{
+    background-color: v.$red;
+    color: v.$white;
+}
+
+.exito{
+    background-color: v.$green;
 }

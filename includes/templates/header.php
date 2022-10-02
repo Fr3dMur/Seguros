@@ -22,7 +22,7 @@
         <section class="bar contenedor">
 
             <div class="logo">
-                <a href="index.html">
+                <a href="/index.php">
                     <h1>Leudis Osuna </h1>
                 </a>
                 <p>Corredor de Seguros</p>

@@ -98,13 +98,7 @@
                         <textarea name="t-area" placeholder="Escribenos tus dudas   " id="t-area" cols="30" rows="10"></textarea>
                     
                     </div>
-
-                    <div>
-                        <button>
-                            enviar
-                        </button>
-                    </div>
-
+                    <input type="submit" class=" boton-azul" value="Enviar">
                 </fieldset>
             </form>
         </div>

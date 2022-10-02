@@ -1,8 +1,17 @@
 @use '../base/var' as v;
 @use '../base/mixins' as m;
 
+.adminPage{
+    height: 20rem;
+}
+
 .database-asegurados{
     margin: 3rem auto;
+}
+
+.contenedor-botones{
+    display: flex;
+    justify-content: space-between;
 }
 
 .asegurados{

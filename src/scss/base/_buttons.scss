@@ -3,5 +3,9 @@
 
 .boton-azul{
     @include m.boton(v.$darkBlue, inline);
-    
+}
+
+.boton-azul-suave{
+    @include m.boton(darken(v.$blueLight, 10), inline);
+    color: v.$black;
 }
