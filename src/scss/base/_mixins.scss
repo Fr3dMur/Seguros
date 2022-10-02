@@ -31,8 +31,25 @@
     gap: $separacion;
 }
 
+
 @mixin resetearLista{
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
+@mixin boton($bgcolor, $display) {
+  background-color: $bgcolor;
+  color: v.$white;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-top: 1rem;
+  display: $display;
+  border: none;
+
+  &:hover{
+      background-color: darken($bgcolor, 6);
+      cursor: pointer;
+}}

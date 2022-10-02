@@ -1,0 +1,21 @@
+.contenedor-logIn{
+    margin: 2rem auto;
+}
+.logIn{
+    margin: 0 0 .5rem 0;
+
+    legend{
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2;
+    }
+
+   
+
+    input{
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+}

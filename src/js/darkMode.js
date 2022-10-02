@@ -22,6 +22,7 @@ function modeDark(){
     // Get the Button
     const darkButton = document.querySelector('.dark-mode-boton');
 
+    // Add or Remove the Class for Dark Mode
     darkButton.addEventListener('click', function(){
         document.body.classList.toggle('dark-mode');
         darkButton.classList.toggle('change');       

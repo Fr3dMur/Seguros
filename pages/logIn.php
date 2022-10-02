@@ -4,11 +4,11 @@
 
 ?>
 
-<main class="contenedor">
+<main>
 
 
-    <form action="" class="logIn">
-        <fieldset>
+    <form action="" class="contenedor-logIn w-1000 contenedor">
+        <fieldset class="logIn">
             <legend>Iniciar Sesion</legend>
 
             <label for="user">Usuario</label>
@@ -17,6 +17,8 @@
             <label for="password">Password</label>
             <input type="password" id="password" placeholder="Escribe tu Password">
         </fieldset>
+
+        <input type="submit" class=" boton-azul" value="Iniciar Sesion">
     </form>
 </main>
 

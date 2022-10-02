@@ -1,0 +1,7 @@
+@use 'var' as v;
+@use 'mixins' as m;
+
+.boton-azul{
+    @include m.boton(v.$darkBlue, inline);
+    
+}
