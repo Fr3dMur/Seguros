@@ -27,12 +27,28 @@
             border: v.$bordeNegro;
             padding: 1rem;
             color: v.$white;
+
+            &:last-of-type{
+                svg{
+                    width: 2.5rem;
+                }
+            }
         }
     }
     
     td{
         border: v.$bordeNegro;
         text-align: center;
+
+        &:last-of-type{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            svg{
+                width: 2rem;
+            }
+        }
     }
 
 }

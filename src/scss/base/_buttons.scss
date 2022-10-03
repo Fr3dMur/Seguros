@@ -9,3 +9,24 @@
     @include m.boton(darken(v.$blueLight, 10), inline);
     color: v.$black;
 }
+
+.boton-erase{
+    background-color: transparent;
+    border: none;
+    width: .5rem;
+    height: 2.1rem;
+    position: relative;
+    top: .2rem;
+    
+    
+    &:hover{
+        cursor: pointer;
+    }
+    
+    .img-boton{
+        position: relative;
+        bottom: .3rem;
+        right: 1rem;
+        // top: .5rem;
+    }
+}
